@@ -1,3 +1,161 @@
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+  h1 {}
+  
+  h2 {}
+  
+  h3 {}
+  
+  /* ---- layout ---- */
+  
+
+  .page-header{
+      background: black
+  }
+
+  .main-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+  .container {
+    margin: 0 20px;
+    max-width: 960px;
+    border: 1px solid black
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  /* ---- components ---- */
+  .page-header{
+      color: white;
+  }
+  
+  section:nth-last-of-type(even){
+      background: lightskyblue
+  }
+
+  /* ---- section ---- */
+
+  .inline-list li{
+      display: inline-block
+  }
+
+  section{
+      margin-bottom: 20px;
+      padding-top: 20px;
+  }
+
+  footer{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+  
+  section#portfolio {
+    // ...
+  }
+
+   /* ---- header ---- */
+
+  .page-header h1{
+      font-size: 1em;
+}
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .page-header h1{
+        font-size: 1em;
+  }
+
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .inline-list li{
+        display: inline-block
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      .container{
+        margin: 0 auto
+      }
+  .page-header h1{
+      font-size: 3em;
+}
+.inline-list li{
+    display: inline-block
+}
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+      .container{
+          margin: 0 auto
+      }
+  }
+
+  
+
 body{
-    background: bisque
+    background: white
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua
+}
+
+img:hover{
+   opacity: .7;
+   -moz-box-shadow:    3px 3px 5px 6px #ccc;
+   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+   box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.page-header{
+    background: black;
+    color: white;
+    display: block;
+    margin: 30px
+}
+
+.page-header a{
+    color: pink
+}
+
+.page-header a:hover{
+    color: aquamarine
+}
+
+.inline-list li{
+    display: inline-block;
+}
+
+.portfolio__list li{
+    width: 25%
 }
